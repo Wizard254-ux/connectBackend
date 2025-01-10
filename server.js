@@ -6,7 +6,7 @@ const socketIo=require('socket.io')
 const server=http.createServer(app)//create http server to attach socket.io
 const io=socketIo(server,{
     cors:{
-        origin:['http://localhost:5173','http://127.0.0.1:5500','https://connectbackend-ba4y.onrender.com'],
+        origin:['http://localhost:5173','http://127.0.0.1:5500','https://connect-frontend-seven.vercel.app'],
         credentials:true  // Enable cookies in CORS requests
     }
 }) // Initialize socket.io with the HTTP server
