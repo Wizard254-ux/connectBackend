@@ -14,7 +14,7 @@ app.use(cors({origin:['http://localhost:5173','https://connect-frontend-seven.ve
 app.use(express.json())
 app.use('/auth',Auth)
 app.use('/api/Admin',Admin)
-app.use('/api/ ',clubAdmin)
+app.use('/api/clubAdmin',clubAdmin)
 app.use('/api/users',Anauth)
 app.use('/api/user/',AuthenticatedUser)
 app.use('/api/messages/',AuthenticatedUser)
