@@ -7,9 +7,10 @@ const Anauth=require('./Routes/AnauthorizedRoutes')
 const AuthenticatedUser=require('./Routes/UserAuthenticatedRoutes')
 require('dotenv').config();  // Load environment variables
 const cors=require('cors')
+const PORT = process.env.PORT || 5000;
 
 
-app.use(cors({origin:['http://localhost:5173','http://127.0.0.1:5500'] }))
+app.use(cors({origin:['http://localhost:5173','https://connect-frontend-seven.vercel.app/'] }))
 app.use(express.json())
 app.use('/auth',Auth)
 app.use('/api/Admin',Admin)
@@ -21,8 +22,8 @@ app.use('/uploads', express.static(path.join(__dirname, 'Middleware','profilePic
 app.use('/club_uploads', express.static(path.join(__dirname, 'Middleware','uploads')));
 
 
-server.listen(5000,()=>{
-    console.log('Server is running on port 5000')
+server.listen(PORT,()=>{
+    console.log('Server is running on port ',PORT)
 })
 
 const mongoose = require('mongoose');
