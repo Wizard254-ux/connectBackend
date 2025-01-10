@@ -10,7 +10,7 @@ const cors=require('cors')
 const PORT = process.env.PORT || 5000;
 
 
-app.use(cors({origin:['http://localhost:5173','https://connect-frontend-seven.vercel.app/'] }))
+app.use(cors({origin:['http://localhost:5173','https://connect-frontend-seven.vercel.app'] }))
 app.use(express.json())
 app.use('/auth',Auth)
 app.use('/api/Admin',Admin)
