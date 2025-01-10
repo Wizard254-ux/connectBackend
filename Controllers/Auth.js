@@ -3,7 +3,7 @@ const app=express()
 const User=require('../Models/user.model')
 const jwt=require('jsonwebtoken')
 app.use(express.json())
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 // process.env.JWT_SECRET //Acces the scret key from enviroment variables
 
 

@@ -5,7 +5,6 @@ const fs=require('fs')
 const app=express()
 app.use(express.json())
 const UserProfile=require('../Models/userProfile.model')
-const User=require('../Models/user.model')
 
 const Profile=async(req,res)=>{
 try{

@@ -2,7 +2,7 @@ const express=require('express')
 const app=express()
 const User=require('../Models/user.model')
 app.use(express.json())
-const bcrypt=require('bcrypt')
+const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 
 const loginAdmin=async(req,res)=>{
