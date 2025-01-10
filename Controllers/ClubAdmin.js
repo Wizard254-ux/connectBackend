@@ -99,7 +99,7 @@ const getVenues=async(req,res)=>{
           images: event.images.map((imagePath) => {
             // Extract only the file name
             const fileName = path.basename(imagePath);
-            return `http://localhost:5000/club_uploads/${fileName}`;
+            return `https://connectbackend-ba4y.onrender.com/club_uploads/${fileName}`;
           }),
         };
       });
@@ -123,7 +123,7 @@ const getClubAdminVenues=async(req,res)=>{
               images: event.images.map((imagePath) => {
                 // Extract only the file name
                 const fileName = path.basename(imagePath);
-                return `http://localhost:5000/club_uploads/${fileName}`;
+                return `https://connectbackend-ba4y.onrender.com/club_uploads/${fileName}`;
               }),
             };
           });

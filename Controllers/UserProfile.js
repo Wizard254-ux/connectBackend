@@ -87,7 +87,7 @@ const getProfiles=async(req,res)=>{
         images: profile.images.map((imagePath) => {
           // Extract only the file name
           const fileName = path.basename(imagePath);
-          return `http://localhost:5000/uploads/${fileName}`;
+          return `https://connectbackend-ba4y.onrender.com/uploads/${fileName}`;
         }),
       };
     });
@@ -115,7 +115,7 @@ const confirmProfile=async(req,res)=>{
         images: profile.images.map((imagePath) => {
           // Extract only the file name
           const fileName = path.basename(imagePath);
-          return `http://localhost:5000/uploads/${fileName}`;
+          return `https://connectbackend-ba4y.onrender.com/uploads/${fileName}`;
         }),
       };
     });
